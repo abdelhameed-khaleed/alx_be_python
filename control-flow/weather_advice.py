@@ -1,8 +1,3 @@
-
-
-# weather_advice.py
-
-# Prompt the user for current weather
 weather = input(
     "What's the weather like today? (sunny/rainy/cold): ")
 
