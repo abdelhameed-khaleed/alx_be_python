@@ -7,19 +7,17 @@ num2 = input("Enter the second number:")
 operation = input("Choose the operation (+, -, *, /):")
 result = 0
 
-match (operation):
-    case "-":
-        result = float(num1) - float(num2)
-    case "*":
-        result = float(num1) * float(num2)
-    case "/":
-        if float(num2) != 0:
-            result = float(num1) / float(num2)
+match operation:
+    case '+':
+        print(f"The result is {num1 + num2}")
+    case '-':
+        print(f"The result is {num1 - num2}")
+    case '*':
+        print(f"The result is {num1 * num2}")
+    case '/':
+        if num2 == 0:
+            print("Cannot divide by zero.")
         else:
-            result = "Error: Division by zero is not allowed."
-    case "+":
-        result = float(num1) + float(num2)
+            print(f"The result is {num1 / num2}")
     case _:
-        print("Invalid operation selected.")
-
-print(f"The result is: {result}")
+        print("Invalid operation.")
