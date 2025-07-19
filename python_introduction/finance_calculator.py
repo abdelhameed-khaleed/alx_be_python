@@ -1,6 +1,6 @@
 import time
 Monthly_income = input("Enter your monthly income : ")
-Monthly_expenses = input("Enter your monthly expenses :")
+Monthly_expenses = input("Enter your total monthly expenses:")
 
 monthly_savings = float(Monthly_income) - float(Monthly_expenses)
 
